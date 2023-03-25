@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alet Message JavaScript</title>
+</head>
+
+<body>
+    <p>This is JavaScript</p>
+    <!--<button onclick="document.getElementById('demo').innerHTML=Date()">Click to get current Date and Time</button>-->
+
+    <button id="btn">Click to get Current Date and Time</button>
+    <p id="demo">Hello</p>
+    <script>
+        document.getElementById('btn').onmouseover=function
+        ()
+        {
+            document.getElementById('demo').innerHTML=Date();
+        }
+    </script>
+
+</body>
+ 
+</html>
