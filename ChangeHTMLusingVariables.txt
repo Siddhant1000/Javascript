@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Change HTML using Variables</title>
+        <style>
+            .del
+            {
+                background-color:blue;
+                color:white;
+                height:100px;
+                width:auto; 
+            }
+            .mum
+            {
+                background-color:	#ff6666;
+                color:white;
+                height:100px;
+                width:auto;
+            }
+
+            .bgl
+            {
+                background-color: blueviolet;
+                color:white;
+                height:100px;
+                width:auto;
+            }
+            .cap
+            {
+                background-color: green;
+                color:black;
+            }
+
+            
+        </style>
+
+    </head>
+    <body>
+        <div class="del" id="del">Delhi is <span class="cap">Capital</span></div>
+        <div class="mum" id="mumbai1">Mumbai</div>
+        <div class="bgl">Bangalore</div>
+        <button id="delhi">Delhi</button>
+        <button id="mum">Mumbai</button>
+        <script>
+            var color='rgb(13,166,222)';
+            document.getElementById('delhi').onclick = function()
+            {
+                document.getElementById('del').style.backgroundColor = color;
+            }
+
+           
+
+            //alert(x);
+
+
+            document.getElementById('mum').onclick = function()
+            {
+                var x,y,z,divcolor;
+                x = Math.round(Math.random() *256); 
+                y = Math.round(Math.random() *256); 
+                z = Math.round(Math.random() *256);
+                divcolor='rgb('+ x + ',' + y + ','+ z +')'
+                document.getElementById('mumbai1').innerHTML = "<p>" + divcolor + "</p>"
+                document.getElementById('mumbai1').style.backgroundColor  = divcolor;
+            }
+        </script>
+</html>
