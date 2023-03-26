@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Functions JavaScript</title>
+        <style>
+            .del
+            {
+                background-color:blue;
+                color:white;
+                height:100px;
+                width:auto; 
+            }
+            .mum
+            {
+                background-color:	#ff6666;
+                color:white;
+                height:100px;
+                width:auto;
+            }
+
+            .bgl
+            {
+                background-color: blueviolet;
+                color:white;
+                height:100px;
+                width:auto;
+            }
+            .cap
+            {
+                background-color: green;
+                color:black;
+            }
+
+            
+        </style>
+
+    </head>
+    <body>
+        <div class="del" id="del">Delhi is <span class="cap">Capital</span></div>
+        <div class="mum" id="mumbai1">Mumbai</div>
+        <div class="bgl" id="bang">Bangalore</div>
+        <button id="delhi" onclick="swap('del','mumbai1')">Delhi to Mumbai</button>
+        <button id="mum" onclick="swap('mumbai1','bang')">Mumbai to Bangluru</button>
+        <script>
+            function greet()
+            {
+                alert("Hello!");
+            }
+
+            //greet();
+            function greet1(FirstName) 
+            {
+                alert("Hello!" + FirstName +"!");
+            }
+
+            //greet1("Sid");
+            function sum(a,b)
+            {
+                return a + b ;
+
+
+            }
+
+            var x=sum(3,7);
+
+            //alert(x);
+
+            function swap(id1,id2)
+            {
+                var y=document.getElementById(id1).innerHTML;
+                var z=document.getElementById(id2).innerHTML;
+
+                document.getElementById(id2).innerHTML=y;
+                document.getElementById(id1).innerHTML=z;
+            }
+        </script>
+</html>
