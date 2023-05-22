@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>While loop</title>
+</head>
+<body>
+    <p id="para">This is javascript</p>
+    <div id="balance">Current Balance:Rs 1000</div>
+    <script>
+        var i=0;
+        while(i<5)
+        {
+            document.getElementById('para').innerHTML+="<br>" + i ;
+            i++;      
+        }
+
+        var balance=1000;
+        var itemsBought=0;
+        while(balance>0)
+        {
+            var itemPrice=Math.floor(Math.random()*100);  //random gives random number between 0 and 1 , floor gives value of nearest integer possible
+            if(itemPrice<=balance)
+            {
+                itemsBought+=1;
+                balance-=itemPrice;
+                document.getElementById('balance').innerHTML+="<p> Purchase amount : Rs  " + itemPrice + ",  New Balance : Rs"+balance+" ,</p>"
+            }
+        }
+
+
+    </script>  
+    
+</body>
+</html>
