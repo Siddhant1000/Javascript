@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Objects</title>
+</head>
+<body>
+    <p>JavaScript Object</p>
+    <script>
+
+        var car={
+
+            Name: "Urban Cruiser",
+            Make: "Toyota",
+            YOM: "2022",
+            Color:"Brown",
+            Engine:"1500cc"
+
+        };
+
+        window.console.log(car);
+        delete car.YOM;
+        window.console.log(car);
+
+
+
+    </script>
+    
+</body>
+</html>
