@@ -1,0 +1,275 @@
+/////////////ALL CONCEPTSSSSS////////////////////////
+
+/*
+var myName="Siddhant";
+var myAge=26;  //myAge==camelCase
+var $myname="MN";
+console.log(myName);
+console.log(myAge);
+console.log($myname); */
+
+/************* data types in java *****************/
+
+//var myName="Siddhant";
+//console.log(typeof(myName));
+
+//var myAge=12;
+//console.log(typeof(myAge)); 
+
+// var iAmThapa=true;
+
+// console.log(typeof(iAmThapa));
+ 
+// console.log(10+"29");
+
+// console.log(9-"5");  //bug
+
+// console.log("vinod" - "thapa");
+
+// var iAmUseless;
+// console.log(typeof(iAmUseless));
+
+// var myPhoneNumber="aman";
+// console.log(myPhoneNumber);
+
+// if(isNaN(myPhoneNumber))
+// {
+//     console.log("Enter a valid phone number");
+// }
+
+
+ /////Expressions and operators///////
+
+//  var x=5;
+//  var y=5;
+//  console.log(x==y);
+    
+// console.log(20%12);
+
+// var num=5;
+// var newNum=num++ + 10;
+// console.log(num);
+// console.log(newNum);
+
+// var num=5;
+// var newNum=--num + 5;
+// console.log(num);
+// console.log(newNum);
+
+// var a=20;
+// var b=10; 
+// console.log(a>b && b<0); //&& tells that if both are conditions are true then only true , if one of them is false and then whole statement will be false.
+
+// var a=20;
+// var b=10;
+// console.log(a>b || b<0); //if one true then truee
+
+
+
+// var a="aman";
+// console.log(a);
+
+// console.log("hello " + "World");
+
+// console.log(4*4*4);
+
+
+// swapping two numbers
+// var a=5;
+// var b=10;
+// var c =b; //c=10
+// b=a;  //b=5
+
+// a=c; 
+
+// console.log("the value of a is " + a);
+// console.log("the value of b is " +b);
+
+//swapping two numbers without using c(third variable)
+// var a=5;
+// var b=10;
+
+// a+=b;
+// b=a-b;
+
+// a=a-b;
+// console.log("the value of a is " + a);
+// console.log("the value of b is " +b);
+
+// INTERVIEW QUESTION........
+// Q)Difference between == and ===
+
+// == checks the value only and not the data type of it for example if we have var1=5 and var2='5'.It will give answer true because it will check the values 
+// === check the value and also the data type of those values
+
+
+//if statement 
+
+// var tom = 'rain';
+// if(tom=='rain')
+// {
+//     console.log("take a raincoat");
+
+// }
+// else{
+//     console.log("No need to take a raincoat");
+// 
+
+// var year =2021;
+// debugger; 
+// if(year%4===0)
+// {
+//     if(year%100===0)
+//     {
+//         if(year%400===0)
+//         {
+//             console.log("the year " + year + "is a leap year");
+//         }
+
+//     }
+//     else{
+//         console.log("the year " + year + "is a leap year");
+
+//     }
+
+// }
+// else{
+//     console.log("the year " + year + "is not a leap year");
+// }
+// var score=0;
+// if(score==0){
+//     console.log("we have won!");
+
+// }
+// else{
+//     console.log("we have not won!");
+// }
+
+//The conditional ternary operator is the only javascript operator that takes three operands.
+
+// var age=6;
+// if(age<10)
+// {
+//     console.log("You are good to go !!!");
+
+// }
+// else{
+//     console.log("You are not good to go!!");
+// }
+
+// var age=19;
+// console.log((age>=20) ? "you are good " : "You are not good!");
+
+// var area="circle";
+// var pi=3.14 , l=5,b=2, r=3;
+
+// if(area=="circle")
+// {
+//     console.log("the area of the circle is : "+ pi*r**2);
+// }
+// else if(area=="triangle")
+// {
+//     console.log("the area of the triangle is : " + (l*b)/2);
+
+// }
+// else if(area=="rectangle")
+// {
+//     console.log("the area of the triangle is : " + (l*b));
+
+
+// }
+// else{
+//     console.log("please enter valid data");
+// }
+
+//using switch statement and break statement
+// var area= "circle";
+// var pi=3.14 , l=5,b=2, r=3;
+
+
+// switch (area)
+// {
+//     case 'circle':
+//         console.log("the area of the circle is : " + pi*r**2);
+//     break;
+//     case 'triangle':
+//         console.log("the area of the triangle is : " + (l*b)/2);
+//     break;
+
+//     case  'rectangle':
+//         console.log("the area of the rectangle is : " + (l*b));
+//     break;
+
+//     default:
+//         console.log("please enter valid data");
+
+
+// }
+
+
+//while loop
+
+// var num=10;
+
+// while(num<=10)
+// {
+//     console.log(num);
+//     num++;
+// }
+
+
+//do-while loop
+
+// var num=0;
+
+// do{
+//     console.log(num);
+//     num++;
+
+// }while(num<=10);
+
+//difference between do and do while is in do while condition is checked after the loop gets executed .
+
+
+//for loop
+// for(var num=0;num<=10;num++)
+// {
+//     console.log(num);
+// }
+
+//printing table for 8 
+// for(var num=1;num<=10;num++)
+// {
+//     var tableOf =8 ;
+//     console.log(tableOf+ "*"+ num + "=" + tableOf * num);
+// }
+
+// for(var num=1;num<=10;num++)
+// {
+//     var tableOf =10;
+//     console.log(tableOf + "*" + num  + "=" + tableOf * num);
+// }
+
+// Functions in Javascript
+
+
+// var a=19;
+// var b=19;
+// var c=a+b;
+// console.log("the sum of 2 are  : " + c );
+
+// function sum()    //defining a function
+// {
+//     var a=10, b=19;
+//     var total=a+b;
+//     console.log(total);
+
+// }
+
+// sum(); //calling a function 
+
+
+//function parameter vs function arguments
+
+//Function parameter are the names listed in the functions definition.
+//Function arguments are the real values passed to the function.
